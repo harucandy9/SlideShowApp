@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3315961C24D6A8B70051375A /* autumn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3315961B24D6A8B70051375A /* autumn.jpg */; };
 		33E0383924D657B20062C1E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E0383824D657B20062C1E0 /* AppDelegate.swift */; };
 		33E0383B24D657B20062C1E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E0383A24D657B20062C1E0 /* SceneDelegate.swift */; };
 		33E0383D24D657B20062C1E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E0383C24D657B20062C1E0 /* ViewController.swift */; };
@@ -14,13 +15,13 @@
 		33E0384224D657B30062C1E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33E0384124D657B30062C1E0 /* Assets.xcassets */; };
 		33E0384524D657B30062C1E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33E0384324D657B30062C1E0 /* LaunchScreen.storyboard */; };
 		33E0385124D667B40062C1E0 /* spring.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 33E0384D24D667B40062C1E0 /* spring.jpg */; };
-		33E0385224D667B40062C1E0 /* fall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 33E0384E24D667B40062C1E0 /* fall.jpg */; };
 		33E0385324D667B40062C1E0 /* summer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 33E0384F24D667B40062C1E0 /* summer.jpg */; };
 		33E0385424D667B40062C1E0 /* winter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 33E0385024D667B40062C1E0 /* winter.jpg */; };
 		33E0385624D66ADE0062C1E0 /* OriginalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E0385524D66ADE0062C1E0 /* OriginalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3315961B24D6A8B70051375A /* autumn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = autumn.jpg; sourceTree = "<group>"; };
 		33E0383524D657B20062C1E0 /* SlideShowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideShowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33E0383824D657B20062C1E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33E0383A24D657B20062C1E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,7 +31,6 @@
 		33E0384424D657B30062C1E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33E0384624D657B30062C1E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33E0384D24D667B40062C1E0 /* spring.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spring.jpg; sourceTree = "<group>"; };
-		33E0384E24D667B40062C1E0 /* fall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fall.jpg; sourceTree = "<group>"; };
 		33E0384F24D667B40062C1E0 /* summer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = summer.jpg; sourceTree = "<group>"; };
 		33E0385024D667B40062C1E0 /* winter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = winter.jpg; sourceTree = "<group>"; };
 		33E0385524D66ADE0062C1E0 /* OriginalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalViewController.swift; sourceTree = "<group>"; };
@@ -84,8 +84,8 @@
 			children = (
 				33E0384D24D667B40062C1E0 /* spring.jpg */,
 				33E0384F24D667B40062C1E0 /* summer.jpg */,
-				33E0384E24D667B40062C1E0 /* fall.jpg */,
 				33E0385024D667B40062C1E0 /* winter.jpg */,
+				3315961B24D6A8B70051375A /* autumn.jpg */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -149,8 +149,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				33E0385124D667B40062C1E0 /* spring.jpg in Resources */,
-				33E0385224D667B40062C1E0 /* fall.jpg in Resources */,
 				33E0385324D667B40062C1E0 /* summer.jpg in Resources */,
+				3315961C24D6A8B70051375A /* autumn.jpg in Resources */,
 				33E0384524D657B30062C1E0 /* LaunchScreen.storyboard in Resources */,
 				33E0385424D667B40062C1E0 /* winter.jpg in Resources */,
 				33E0384224D657B30062C1E0 /* Assets.xcassets in Resources */,
