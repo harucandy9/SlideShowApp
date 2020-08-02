@@ -9,11 +9,16 @@
 import UIKit
 
 class OriginalViewController: UIViewController {
+    
+    var imageNo : Int = 0
+    let images:[String] = ["spring.jpg","summer.jpg","autumn.jpg","winter.jpg"]
 
+    @IBOutlet weak var imageViewOriginal: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        self.imageViewOriginal.image = UIImage(named: images[imageNo])
     }
     
 

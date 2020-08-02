@@ -24,7 +24,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWG-HP-lrt">
-                                <rect key="frame" x="301" y="543" width="31" height="30"/>
+                                <rect key="frame" x="302" y="543" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="再生"/>
                                 <connections>
@@ -62,18 +62,17 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QLP-zR-r9O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="xqX-eB-gGT">
                     <connections>
-                        <action selector="tappedImage:" destination="qxw-U8-qhg" id="UOF-mO-RVq"/>
+                        <action selector="tapThumbnail:" destination="6la-m6-ked" id="v3B-eN-f91"/>
                         <segue destination="BYZ-38-t0r" kind="show" id="jwP-qS-PwL"/>
                     </connections>
                 </tapGestureRecognizer>
-                <exit id="qxw-U8-qhg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="124.55357142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Original View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SlideShowApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="OriginalViewController" customModule="SlideShowApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -95,6 +94,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="8ZZ-Wj-FSR"/>
+                    <connections>
+                        <outlet property="imageViewOriginal" destination="x7Y-Mt-3fu" id="c12-DX-yO7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="Pvt-zy-osp" userLabel="Exit" sceneMemberID="exit"/>
