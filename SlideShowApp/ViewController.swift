@@ -36,18 +36,23 @@ class ViewController: UIViewController {
         ShowImage(self.imageNo)
     }
     
+    //サムネイルタップ時
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let originalViewController:OriginalViewController = segue.destination as! OriginalViewController
         originalViewController.imageNo = self.imageNo
+        InitTimer()
     }
 
-    @IBAction func unwind(_ segue: UIStoryboardSegue){}
+    @IBAction func unwind(_ segue: UIStoryboardSegue){
+        ShowImage(self.imageNo)
+        if(isRunSlide){StartSlide()}
+    }
     
     //進むボタンタップ時
     @IBAction func buttonNextImage(_ sender: Any) {
         self.imageNo += 1
         if(self.imageNo >= images.count){ self.imageNo = 0}
-        ShowImage(imageNo)
+        ShowImage(self.imageNo)
     }
     //戻るボタンタップ時
     @IBAction func buttonPreviewImage(_ sender: Any) {
@@ -66,17 +71,26 @@ class ViewController: UIViewController {
         DisableButtons()
         buttonSlide.setTitle("停止", for: .normal)
         isRunSlide = true
-        self.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer(_:)), userInfo: nil, repeats: true)
+        if(timer == nil){
+            self.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer(_:)), userInfo: nil, repeats: true)
+        }
     }
     //自動スライド停止
     func StopSlide(){
         EnableButtons()
         buttonSlide.setTitle("再生", for: .normal)
+        InitTimer()
         isRunSlide = false
-        self.timer_sec = 0
-        self.timer.invalidate()
-        self.timer = nil
     }
+    //タイマー初期化
+    func InitTimer(){
+        if(isRunSlide){
+            self.timer_sec = 0
+            self.timer.invalidate()
+            self.timer = nil
+        }
+    }
+    
     //戻る進むボタンを有効にする
     func EnableButtons(){
         buttonNext.isEnabled = true
